@@ -1,0 +1,25 @@
+*{
+    margin:0px;
+}
+header{
+    background-color: rgb(15, 23, 42);
+    color:aliceblue;
+}
+.ol{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+
+    padding: 10px;
+}
+.li{
+    text-decoration:none;
+    color:aliceblue;
+    padding:2px;
+}
+.li:hover{
+    background-color:rgb(241, 245, 249);
+    color:black;
+    border-radius:5px;
+
+}

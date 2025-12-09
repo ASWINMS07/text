@@ -1,19 +1,47 @@
-index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>HTML-CSS</title>
+    <style>
+       .attr{
+    background-color:rgb(233, 100, 120);
+    color:white;
+  }
+  .img1{
+    margin:25px;
+    width:100px;
+    height:100px;
+    border:3px solid rgb(149, 67, 149);
     
+  }
+  #id1{
+    
+    color:rgb(115, 78, 118);
+    
+  }
+
+    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="flex.css">
 </head>
 <body>
-    <h1>My Portfolio</h1>
-    <img src="C:\Users\LENOVO\OneDrive\Desktop\OneDrive\Pictures\Screenshots\Screenshot 2025-07-26 205602.png"><br>
-<button onclick="window.location.href='intro.html'">intro</button>
-<button onclick="window.location.href='contact.html'">contact</button>
-
-
-
+     <header>
+    <ol class="ol">
+       <a href="index.html" class="li"><li>Home</li></a>
+       <a href="float.html" class="li"><li>About</li></a>
+       <a href="flex.html" class="li"><li>Skills</li></a>
+       <a href="grid.html" class="li"><li>Education</li></a>
+       <a href="" class="li"><li>Contact</li></a>   
+    </ol>
+    </header>
+  <h1 style="background-color: rgb(233, 124, 124)"; class="text-attr" >Hello, Cyber Security</h1>
+  <h2 id="id1" class="attr att">College: Sri Eshwar</h2>
+  <h3 style="background-color:rgb(242, 132, 132);">Learning MERN stack in 15 days</h3>
+  <img class="img" src="cyb.jpg" alt="cyber security image" >
+<div><img src="cyb.jpg" alt="cyber security image" class="img1"></div>
+<div><img src="cyb.jpg" alt="cyber security image" class="img1"></div>
+<div><img src="cyb.jpg" alt="cyber security image" class="img1"></div>
 </body>
 </html>
