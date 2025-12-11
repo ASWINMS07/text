@@ -3,48 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MERN Stack</title>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-    <h1>Welcome Cybersecurity to MERN(Full Stack)!!! </h1>
-        <img src="images.jpg" alt="Cybersecurity image" width="650px" height="300px">   
-     <h2>Welcome Cybersecurity to MERN(Full Stack)!!! </h2>
-      <h3>Welcome Cybersecurity to MERN(Full Stack)!!! </h3>
-       <h4>Welcome Cybersecurity to MERN(Full Stack)!!! </h4>
-        <h5>Welcome Cybersecurity to MERN(Full Stack)!!! </h5>
-         <h6>Welcome Cybersecurity to MERN(Full Stack)!!! </h6>
-          <!-- <h7>Welcome Cybersecurity to MERN(Full Stack)!!!</h7> -->
-          <p>Welcome Cybersecurity to MERN(Full Stack)!!!</p>
-    </div>
-          <h3>Introduction to Web Development</h3>
-          <ol>
-            <li>Git & Github</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>ReactJS</li>
-            <li>NodeJS</li>
-            <li>ExpressJS</li>
-            <li>MongoDB</li>
-          </ol>
-          <audio src="audio.mp3" controls></audio>
-          <h3>Introduction to MERN Stack</h3>
-          <ul>
-            <li>MongoDB</li>
-            <li>Express</li>
-            <li>React</li>
-            <li>Node</li> 
-          </ul>
-          <h3>Feedbacks</h3>
-          <form action="redirection.html">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name"><br><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email"><br><br>
-            <label for="message">Feedback</label><br>
-            <textarea name="message" id="message" cols="30" rows="5"></textarea><br><br>
-            <input type="submit" value="Submit">
-          </form>
+    <!-- <p id="msg">Hello</p>
+    <p class="item">One</p>
+    <p class="item">Two</p> -->
+    <!-- <div id="msg"></div> -->
+    <!-- <p id="msg"></p>
+    <button id="sumbit">Show Message</button> -->
+    <!-- <ul id="list"></ul> -->
+     <!-- <button id="submit" onclick="submitted()">click</button> -->
+    <!-- <p id="name"></p>
+    <input type="text" id="inp" placeholder="Enter the name">
+    <button id="submit">submit</button> -->
+
+    <!-- <p id="num">0</p>
+    <button id="inc">Increment</button>
+    <button id="dec">Decrement</button>
+    <button id="reset">Reset</button> -->
+
+    <!-- <h1>Rock Paper Scissor</h1>
+    <button onclick="getResult('rock')">Rock</button>
+    <button onclick="getResult('paper')">Paper</button>
+    <button onclick="getResult('scisssor')">Scissor</button>
+    <p id="result"></p> -->
+
+    <!-- <form id="myForm">
+        <label for="name">Name : </label>
+        <input type="text" id="name" placeholder="Enter the name">
+        <label for="email">Email : </label>
+        <input type="email" id="email">
+        <button type="submit" id="btn">submit</button>
+    </form> -->
+    <!-- <p id="msg">Hello</p> -->
+     
+     <!-- <br>
+    <form id="myForm">
+        <label for="email">Email : </label>
+        <input type="email" id="email" placeholder="Enter the Password">
+        <label for="Password">Password : </label>
+        <input type="password" id="password" placeholder="Enter the Password">
+        <button type="submit" id="btn">submit</button>
+    </form>
+    <br>
+    <p id="status"></p> -->
+
+    <!-- <p id="title">Hello World!!</p> -->
+    <!-- <button id="toggle" onclick="toggle()">toggle</button> -->
+    <p id="msg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, saepe?</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <script>
+        document.getElementById("msg").style.fontSize = '30px'
+        document.getElementById('hide').addEventListener('click',()=>{
+            document.getElementById("msg").style.display="none";
+        })
+        document.getElementById('show').addEventListener('click',()=>{
+            document.getElementById("msg").style.display="block"
+        })
+        // var toggle = ()=>{
+        //     var color = ['red','green','orange','yellow','white','black'];
+        //     var index = Math.floor(Math.random()*color.length);
+        //     document.querySelector('body').style.backgroundColor=color[index];
+        // }
+        // var buttonClicked = () =>{
+        // var title = document.getElementById('title');
+        // var result = title.innerText==="Hello World!!"? "Hello Vikraam!!" :"Hello World!!";
+        // title.innerText = result;
+        // }
+        // var toggle = () =>{
+        //     var color = ["red","blue","Green","Orange","yellow"];
+        //     var ind = Math.floor(Math.random()*color.length)
+        //     document.querySelector('body').style.backgroundColor=color[ind];
+        // }
+        //  var status = "";
+        // document.getElementById('myForm').addEventListener('submit',(e)=>{
+        //     e.preventDefault();
+           
+        //     const email = document.getElementById("email").value;
+        //     const password = document.getElementById("password").value;
+        //     if(email==="vikraam@gmail.com" && password==="vikraam"){
+        //         status = "Login Successfully";
+        //     }
+        //     else{
+        //         status = "Invalid Credential";
+        //     }
+        //     document.getElementById('status').innerText = status;
+        // })
+        
+        // document.getElementById('msg').remove();
+        // document.getElementById('myForm').addEventListener('submit',(e)=>{
+        //     e.preventDefault();
+        //     const name = document.getElementById("name").value;
+        //     const email = document.getElementById("email").value;
+        //     console.log(`Name : ${name}`);
+        //     console.log(`Email : ${email}`);
+        //     alert(`Form sumbitted succesfully`);
+        // })
+
+        // const getResult = (userChoice) =>{
+        //     var choice = ['rock','paper','scissor'];
+        //     var computerChoice = choice[Math.floor(Math.random()*3)];
+        //     console.log(computerChoice);
+        //     var result="";
+        //     if(userChoice===computerChoice) result = "Draw😒"
+        //     else if((userChoice==="rock" && computerChoice==='paper')||
+        // (userChoice==="paper" && computerChoice==='scissor')||
+        // (userChoice==="scissor" && computerChoice==='rock')
+        // ) {
+        //     result = "loss😢"
+        // }
+        // else{
+        //     result = "win😎"
+        // }
+        // document.getElementById("result").innerText = result;
+        // }
+
+        // var count = 0;
+        // document.getElementById('inc').addEventListener('click',()=>{
+        //     count+=1;
+        //     document.getElementById('num').innerText=count;
+        // })
+        // document.getElementById('dec').addEventListener('click',()=>{
+        //     count-=1;
+        //     document.getElementById('num').innerText=count;
+        // })
+        // document.getElementById('reset').addEventListener('click',()=>{
+        //     count =0;
+        //     document.getElementById('num').innerText=count;
+        // })
+
+        // document.getElementById("submit").addEventListener("click",()=>{
+        //     var text = document.getElementById("inp").value;
+        //     document.getElementById("name").innerText=text;
+        // })
+
+        // var submitted = ()=>{
+        //     alert("Hi")
+        // }
+        // var li=document.createElement("li");
+        // li.innerText="One";
+        // document.getElementById("list").append(li);
+        // document.getElementById("sumbit").addEventListener("click",()=>{
+        //     document.getElementById("msg").innerText="Hello World!!"
+        // })
+        // document.getElementById('msg').innerHTML = "<p>Hello</p>"
+        // document.getElementById('msg').style.color="Red"
+        // var item = document.getElementsByClassName('item');
+        // item[0].style.color="Green"
+        // document.querySelector('#msg').style.backgroundColor="blue" //id
+        // document.querySelector('.list').style.backgroundColor="blue" //class
+        // document.querySelector('p').style.backgroundColor="blue"//tag
+    </script>
 </body>
 </html>
